@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto Hack a Boss</title>
+    <link rel="stylesheet" href="/Css/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>HANG-MAN GAME</h1>
+    </header>
+    <main>
+        <section id="imagenAhorcado">
+            <img src="/Imágenes/1Oportunidad.png" alt="Cabeza">
+           <!--  <img src="/Imágenes/2Oportunidad.png" alt="Tronco">
+            <img src="/Imágenes/3Oportunidad.png" alt="Brazo izquierdo"> 
+            <img src="/Imágenes/5Oportunidad.png" alt="Brazo derecho">
+            <img src="/Imágenes/4Oportunidad.png" alt="Pierna derecha">
+            <img src="/Imágenes/6Oportunidad.png" alt="Pierna izquierda"> -->
+        </section>
+        <section id="guionesPalabra">_ A _ D _ A</section>
+        
+        <section id="checkLetra">
+            <h2>Averigüa la palabra correcta y...¡SALVA AL VAQUERO!</h2>
+            <section id="check"><label for="letra"></label>
+                <input
+                  type="text"
+                  name="letra"
+                  placeholder="Solo 1 letra, no números"
+                  id="boxLetter"/>
+                  <button id = "checkButton">CHECK </button>
+                </section>
+                
+        </section>
+        <section id="Pista">
+        <p>Aqui la pista</p>
+        <button id = "startButton"> START</button>
+    </section>
+    </main>
+    <footer>Proyecto Hack a Boss</footer>
+    <script src="/JS/JavaScript.js"></script>
 </body>
 </html>

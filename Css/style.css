@@ -1,5 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Smokum&family=Sono:wght@300;600&display=swap");
+/* font-family: 'Anton', sans-serif;
+font-family: 'Smokum', cursive;
+font-family: 'Sono', sans-serif;
+ */
+/* Paleta de colores : #8e665f ; #4b3737 ; #684544 ; #c49681 ; #e2cea3*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  background-color: #e2cea3;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 9rem 1fr 2rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 1rem;
+  font-family: "Smokum", cursive;
+  font-size: 5rem;
+  text-align: center;
+  color: #4b3737;
+  text-shadow: 10px 10px 10px #8e665f;
+}
+
+h2 {
+  font-family: "Sono", sans-serif;
+  font-size: 1.1rem;
+  padding: 0.7rem;
+}
+
+#imagenAhorcado {
+  display: flex;
+  justify-content: center;
+  background-color: #c49681;
+  height: 50%;
+}
+
+#checkLetra {
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #684544;
+}
+
+#check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#guionesPalabra {
+  padding: 0.2rem;
+  font-size: 3rem;
+  font-family: "Smokum", cursive;
+  text-align: center;
+}
+
+#usedLetters {
+  text-align: center;
+}
+
+#boxLetter {
+  background-color: #c49681;
+}
+
+#checkButton {
+  background-color: #c49681;
+  font-size: 1.1rem;
+  font-family: "Anton", sans-serif;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  margin: 0.3rem
+}
+
+#boxLetter {
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+}
+
+#Pista {
+  font-family: "Sono", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+#startButton {
+  padding: 0.5rem 4rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-family: "Anton", sans-serif;
+  background-color: #684544;
+  box-shadow: 0 10px 20px;
+}
+button :hover {
+  background-color: #c49681;
+  
+}
+
+footer {
+  font-family: "Smokum", cursive;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+
+@media (min-width: 600px) {
+
+body {
+  t
+}
+
+  header {
+    flex-direction: row;
+    justify-content: normal;
+  }
+  main {
+    flex-direction: row;
+  }
+  #imagenAhorcado {
+    height: 65%;
+  }
+
 }
