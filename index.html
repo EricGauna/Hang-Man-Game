@@ -24,14 +24,16 @@
         
         <section id="checkLetra">
             <h2>Averigüa la palabra correcta y...¡SALVA AL VAQUERO!</h2>
-            <section id="check"><label for="letra"></label>
+            <form id="check" name="letter">
+                <p id="usedLetters">LETRAS USADAS</p>
+                <label for="letra"></label>
                 <input
                   type="text"
                   name="letra"
                   placeholder="Solo 1 letra, no números"
                   id="boxLetter"/>
-                  <button id = "checkButton">CHECK </button>
-                </section>
+                  <button id="checkButton" type="submit" name="Check">CHECK</button>
+                </form>
                 
         </section>
         <section id="Pista">

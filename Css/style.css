@@ -70,9 +70,7 @@ h2 {
   text-align: center;
 }
 
-#usedLetters {
-  text-align: center;
-}
+
 
 #boxLetter {
   background-color: #c49681;
@@ -110,9 +108,9 @@ h2 {
   background-color: #684544;
   box-shadow: 0 10px 20px;
 }
-button :hover {
-  background-color: #c49681;
-  
+
+#startButton :hover {
+  color: #4b3737;
 }
 
 footer {
@@ -125,9 +123,7 @@ footer {
 
 @media (min-width: 600px) {
 
-body {
-  t
-}
+
 
   header {
     flex-direction: row;
