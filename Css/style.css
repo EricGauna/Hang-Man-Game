@@ -76,7 +76,9 @@ h2 {
   text-align: center;
 }
 
-
+#usedLetters {
+  text-align: center;
+}
 
 #boxLetter {
   background-color: #c49681;
@@ -116,16 +118,10 @@ h2 {
   box-shadow: 0 10px 20px;
   
 }
-<<<<<<< HEAD
-
-#startButton :hover {
-  color: #4b3737;
-=======
 #checkButton:hover {
   border-radius: 1rem;
   background-color: orange;
   
->>>>>>> CSS actualizado Abraham
 }
 
 #startButton:hover {
@@ -143,9 +139,6 @@ footer {
 
 @media (min-width: 600px) {
 
-<<<<<<< HEAD
-
-=======
 body {
   background-color: #e2cea3;
   min-height: 100vh;
@@ -163,7 +156,6 @@ main {
   display: flex;
   flex-direction: column;
 }
->>>>>>> CSS actualizado Abraham
 
 h1 {
   margin: 1rem;
