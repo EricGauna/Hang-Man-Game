@@ -47,6 +47,10 @@ h2 {
   justify-content: center;
   background-color: #c49681;
   height: 50%;
+  border-radius: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border: black 5px solid;
 }
 
 #checkLetra {
@@ -55,6 +59,8 @@ h2 {
   flex-direction: column;
   align-items: center;
   background-color: #684544;
+  border-radius: 3rem;
+  border: black 5px solid;
 }
 
 #check {
@@ -70,7 +76,9 @@ h2 {
   text-align: center;
 }
 
-
+#usedLetters {
+  text-align: center;
+}
 
 #boxLetter {
   background-color: #c49681;
@@ -82,7 +90,8 @@ h2 {
   font-family: "Anton", sans-serif;
   border-radius: 0.5rem;
   padding: 0.2rem;
-  margin: 0.3rem
+  margin: 0.3rem;
+  box-shadow: black;
 }
 
 #boxLetter {
@@ -107,10 +116,17 @@ h2 {
   font-family: "Anton", sans-serif;
   background-color: #684544;
   box-shadow: 0 10px 20px;
+  
+}
+#checkButton:hover {
+  border-radius: 1rem;
+  background-color: orange;
+  
 }
 
-#startButton :hover {
-  color: #4b3737;
+#startButton:hover {
+  background-color: orange;
+  border-radius: 4rem;
 }
 
 footer {
@@ -123,17 +139,56 @@ footer {
 
 @media (min-width: 600px) {
 
+body {
+  background-color: #e2cea3;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 9rem 1fr 2rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+main {
+  display: flex;
+  flex-direction: column;
+}
 
-  header {
-    flex-direction: row;
-    justify-content: normal;
-  }
-  main {
-    flex-direction: row;
-  }
-  #imagenAhorcado {
-    height: 65%;
-  }
+h1 {
+  margin: 1rem;
+  font-family: "Smokum", cursive;
+  font-size: 5rem;
+  text-align: center;
+  color: #4b3737;
+  text-shadow: 10px 10px 10px #8e665f;
+}
 
+h2 {
+  font-family: "Sono", sans-serif;
+  font-size: 1.1rem;
+  padding: 0.7rem;
+}
+#imagenAhorcado {
+  display: flex;
+  justify-content: center;
+  background-color: #c49681;
+  height: 50%;
+  border-radius: 2rem;
+  border: black 5px solid;
+  
+  
+}
+#checkLetra {
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #684544;
+  border-radius: 3rem;
+  border: black 5px solid;
+  
+}
 }
