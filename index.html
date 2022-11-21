@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,41 +8,38 @@
     <title>Proyecto Hack a Boss</title>
     <link rel="stylesheet" href="/Css/style.css">
 </head>
+
 <body>
     <header>
         <h1>HANG-MAN GAME</h1>
     </header>
     <main>
         <section id="imagenAhorcado">
-            <img src="/Imágenes/1Oportunidad.png" alt="Cabeza">
-           <!--  <img src="/Imágenes/2Oportunidad.png" alt="Tronco">
-            <img src="/Imágenes/3Oportunidad.png" alt="Brazo izquierdo"> 
-            <img src="/Imágenes/5Oportunidad.png" alt="Brazo derecho">
-            <img src="/Imágenes/4Oportunidad.png" alt="Pierna derecha">
-            <img src="/Imágenes/6Oportunidad.png" alt="Pierna izquierda"> -->
+            <div id="imagenesAhorcado"></div>
+
         </section>
-        <section id="guionesPalabra">_ A _ D _ A</section>
-        
-        <section id="checkLetra">
-            <h2>Averigüa la palabra correcta y...¡SALVA AL VAQUERO!</h2>
-            <form id="check" name="letter">
-                <p id="usedLetters">LETRAS USADAS</p>
-                <label for="letra"></label>
-                <input
-                  type="text"
-                  name="letra"
-                  placeholder="Solo 1 letra, no números"
-                  id="boxLetter"/>
-                  <button id="checkButton" type="submit" name="Check">CHECK</button>
+        <section id="letras">
+            <section id="guionesPalabra"></section>
+
+            <section id="checkLetra">
+                <h2>Averigüa la palabra correcta y...¡SALVA AL VAQUERO!</h2>
+                <form id="check" name="letter">
+                    <p id="usedLetters">LETRAS USADAS:</p>
+
+                    <input maxlength="1" type="text" width="" name="letra" placeholder="Solo 1 letra, no números"
+                        id="boxLetter" />
+                    <button id="checkButton">CHECK</button>
                 </form>
-                
+
+            </section>
+            
+            
+            <button id="startButton" type="text" onclick="location.reload()" name="START"> START</button>
         </section>
-        <section id="Pista">
-        <p>Aqui la pista</p>
-        <button id = "startButton"> START</button>
     </section>
     </main>
     <footer>Proyecto Hack a Boss</footer>
-    <script src="/JS/JavaScript.js"></script>
+    <script src="./JS/JavaScript1.js"></script>
 </body>
+
 </html>

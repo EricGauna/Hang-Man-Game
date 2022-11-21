@@ -30,7 +30,7 @@ main {
 h1 {
   margin: 1rem;
   font-family: "Smokum", cursive;
-  font-size: 5rem;
+  font-size: 16vw;
   text-align: center;
   color: #4b3737;
   text-shadow: 10px 10px 10px #8e665f;
@@ -50,20 +50,33 @@ h2 {
   border-radius: 2rem;
   margin-left: 3rem;
   margin-right: 3rem;
-  border: black 5px solid;
+  border: black 10px solid;
+  align-items: center;
+  
+  
+}
+
+#imagenesAhorcado{
+  background-image: url(/Imágenes/MergedImages.png);
+  width: 165px;
+  height: 165px;
 }
 
 #checkLetra {
+  height: 12rem;
   padding-bottom: 0.5rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #684544;
+  justify-content: center;
   border-radius: 3rem;
-  border: black 5px solid;
+  border: black 10px solid;
 }
 
 #check {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -71,13 +84,21 @@ h2 {
 
 #guionesPalabra {
   padding: 0.2rem;
-  font-size: 3rem;
+  font-size: 9vh;
   font-family: "Smokum", cursive;
   text-align: center;
 }
+#letras {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 #usedLetters {
+  font-family: "Sono", sans-serif;
   text-align: center;
+  padding-right: 1rem;
 }
 
 #boxLetter {
@@ -121,12 +142,14 @@ h2 {
 #checkButton:hover {
   border-radius: 1rem;
   background-color: orange;
-  
+  cursor: pointer;
+
 }
 
 #startButton:hover {
   background-color: orange;
   border-radius: 4rem;
+  cursor: pointer;
 }
 
 footer {
@@ -137,58 +160,53 @@ footer {
   justify-content: space-around;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) { 
 
 body {
-  background-color: #e2cea3;
-  min-height: 100vh;
+  height: 100vh;
   display: grid;
-  grid-template-rows: 9rem 1fr 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 14rem 1fr 2rem;
+  grid-template-areas: 
+  "header header"
+  "main main"
+  "footer footer";
+}
+h1 {
+  font-size: 14vw;
 }
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  grid-area: header;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+#imagenAhorcado {
+width: 40vw;
+height: 90%;
+margin: 1rem;
+}
+
+#letras {
+  display: flex;
+    width: 50vw;
+    align-items: normal;
+    
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-}
-
-h1 {
-  margin: 1rem;
-  font-family: "Smokum", cursive;
-  font-size: 5rem;
-  text-align: center;
-  color: #4b3737;
-  text-shadow: 10px 10px 10px #8e665f;
-}
-
-h2 {
-  font-family: "Sono", sans-serif;
-  font-size: 1.1rem;
-  padding: 0.7rem;
-}
-#imagenAhorcado {
-  display: flex;
-  justify-content: center;
-  background-color: #c49681;
-  height: 50%;
-  border-radius: 2rem;
-  border: black 5px solid;
-  
-  
-}
-#checkLetra {
-  padding-bottom: 0.5rem;
-  display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  grid-area: main;
+  flex-direction: row;
   align-items: center;
-  background-color: #684544;
-  border-radius: 3rem;
-  border: black 5px solid;
-  
+}
+footer {
+  grid-area: footer;
+}e
+
+#checkLetra {
+  margin: 0;
+
 }
 }
