@@ -46,7 +46,7 @@ h2 {
   display: flex;
   justify-content: center;
   background-color: #c49681;
-  height: 50%;
+  height: 100%;
   border-radius: 2rem;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -184,7 +184,7 @@ header {
 
 #imagenAhorcado {
 width: 40vw;
-height: 90%;
+height: 100%;
 margin: 1rem;
 }
 
