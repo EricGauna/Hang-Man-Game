@@ -1,5 +1,5 @@
-# 1-Proyecto-Hack-a-Boss
-Primer proyecto grupal, oficial del curso Hack a Boss
+# Hang Man Game
+Primer proyecto grupal del curso Hack a Boss
 
 // Crear una maqueta inicial de como quedaría en pantalla, una vez terminado el proyecto.
 
